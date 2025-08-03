@@ -327,14 +327,16 @@
             </div>
         </div>
     </section>
-
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Yubeli Martínez Sánchez. Todos los derechos reservados.</p>
+        <div class="container"></div>
+            <p>&copy; <span id="current-year"></span> Yubeli Martínez Sánchez. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
 
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 <script src="./js/index.js"></script>
 </html>
 
